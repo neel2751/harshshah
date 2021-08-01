@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --heading: #3b1569;
+  --heading: #000;
   --paragraph: #888888;
   /* ... */
 }
@@ -62,7 +62,7 @@ button {
   color: var(--heading);
 }
 .goalcus {
-  font-size: 0.625em;
+  font-size: 0.75em;
   font-weight: 400;
   color: var(--paragraph);
   letter-spacing: -0.2px;

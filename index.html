@@ -22,7 +22,7 @@
   </head>
   <body style="font-family: 'Poppins'">
     <!--This Section for navbar or header -->
-    <div class="relative bg-white">
+    <div class="relative sticky shadow-lg top-0 z-50 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div
           class="
@@ -34,12 +34,12 @@
           "
         >
           <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#Home">
-              <!-- <img
+            <a class="flex flex-row items-center" href="#Home">
+              <img
                 class="h-8 w-auto sm:h-10"
-                src="./images/CompanyLogo.svg"
+                src="./images/VU Logo.png"
                 alt="Harsh Shah"
-              /> -->
+              />
               <h2 class="text-black-500 font-medium">VISH UNIVERSAL</h2>
             </a>
           </div>
@@ -81,10 +81,11 @@
           </div>
           <nav class="hidden md:flex space-x-10">
             <div class="relative">
-              <button
+              <a
+                href="#Home"
                 type="button"
                 class="
-                  text-gray-500
+                  text-black-500
                   group
                   bg-white
                   rounded-md
@@ -92,7 +93,7 @@
                   items-center
                   text-base
                   font-medium
-                  hover:text-gray-900
+                  hover:text-blue-900
                   focus:outline-none
                   focus:ring-2
                   focus:ring-offset-2
@@ -101,45 +102,49 @@
                 aria-expanded="false"
               >
                 <span>Home</span>
-              </button>
+              </a>
             </div>
 
             <a
               href="#About"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
+              class="text-base font-medium text-black-500 hover:text-blue-900"
             >
               About
             </a>
             <a
               href="#Services"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
+              class="text-base font-medium text-black-500 hover:text-blue-900"
             >
               Services
             </a>
             <a
               href="#Goal"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
+              class="text-base font-medium text-black-500 hover:text-blue-900"
             >
               Our Goal
             </a>
             <a
               href="#Contactus"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
+              class="text-base font-medium text-black-500 hover:text-blue-900"
             >
               Contact Us
             </a>
           </nav>
-          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+
+          <div class="hidden md:flex justify-end md:flex-1 lg:w-0">
             <a
               href="tel:7928655920"
               class="
+                flex flex-col
+                items-center
                 whitespace-nowrap
                 text-base
                 font-medium
-                text-gray-500
-                hover:text-gray-900
+                text-black-500
+                hover:text-blue-900
               "
             >
+              <h4>Harsh Shah</h4>
               +91 9876543210
             </a>
           </div>
@@ -329,9 +334,11 @@
             <!-- <br class="hidden lg:inline-block" /> -->
           </h1>
           <p class="gsapset mb-6 leading-relaxed">
-            harsh solution is the home for all that IT.<br
-              class="hidden lg:inline-block"
-            />
+            We have developed proprietary tools and strategies that have enabled
+            us to lower cost and increase the quality of service to our client
+            base, especially to state agencies, municipalities and school
+            districts, where cost is a deciding factor in everyday decision
+            making.<br class="hidden lg:inline-block" />
           </p>
           <div class="svg hide" id="svg"></div>
           <div class="flex justify-center">
@@ -348,7 +355,7 @@
                 rounded
               "
             >
-              Contact Us
+              Our Services
             </button>
           </div>
         </div>
@@ -442,7 +449,7 @@
           >
             We are Providing
           </p>
-          <p class="mt-4 pb-10 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p class="mt-4 pb-10 max-w-2xl text-lg text-gray-500 lg:mx-auto">
             with more than long periods of involvement work ceaselessly and
             flawlessly to consider your necessities.
           </p>
@@ -487,7 +494,7 @@
                     />
                   </svg>
                 </div>
-                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                <p class="ml-16 text-lg leading-6 font-medium text-black-900">
                   Custome Development
                 </p>
               </dt>
@@ -530,7 +537,7 @@
                     />
                   </svg>
                 </div>
-                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                <p class="ml-16 text-lg leading-6 font-medium text-black-900">
                   Brading & Design
                 </p>
               </dt>
@@ -573,7 +580,7 @@
                     />
                   </svg>
                 </div>
-                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                <p class="ml-16 text-lg leading-6 font-medium text-black-900">
                   Digital Marketing
                 </p>
               </dt>
@@ -616,7 +623,7 @@
                     />
                   </svg>
                 </div>
-                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                <p class="ml-16 text-lg leading-6 font-medium text-black-900">
                   Our Products
                 </p>
               </dt>
@@ -685,7 +692,7 @@
             <!-- <br class="hidden lg:inline-block" />readymade gluten -->
           </h1>
           <!-- <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> -->
-          <p class="goalcus leading-relaxed text-base">
+          <p class="goalcus text-9xl leading-relaxed text-base">
             It is with pleasure that we provide a recommendation for
             CompanyName. We added a master website, design, and walk in robe to
             our existing two storey website. From the beginning we felt very
@@ -743,48 +750,18 @@
               justify-center
             "
           >
-            <svg
-              width="22"
-              height="19"
-              viewBox="0 0 22 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15.1344 15.7496V7.11193L8.06718 1.61523L1 7.11193V15.7496"
-                stroke="#3B1569"
-                stroke-width="1.57048"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18.5535 12.3838H12.5228H6.49219"
-                stroke="#3B1569"
-                stroke-width="1.34613"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M13.0613 12.3838H7.03066H1"
-                stroke="#3B1569"
-                stroke-width="1.34613"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M19.6441 15.7056V7.06798L12.5769 1.57129L5.50977 7.06798V15.7056"
-                stroke="#3B1569"
-                stroke-width="1.57048"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <span class="ml-3 text-xl">Harsh Shah</span>
+            <!-- Logo for Company for that -->
+            <img
+              src="./images/VU Logo.png"
+              alt="visu Universal"
+              height="50px"
+              width="50px"
+            />
+            <span class="ml-3 text-xl">Vish Universal</span>
             <!-- <span class="ml-3 text-xl">ABI Design & Build LTD</span> -->
             <!-- <p>ABI Design & Build LTD</p> -->
           </a>
-          <p class="mt-1 text-sm footername">IT Solution Services</p>
+          <p class="ml-10 text-sm footername">IT Solution Services</p>
 
           <a href="mailto:harshshah@gmail.com">
             <div class="rounded flex py-2 h-full items-center">
@@ -843,7 +820,7 @@
               </svg>
 
               <span class="footeremail ml-1 title-font font-medium"
-                >Baroda, Gujarat, India</span
+                >Baroda,Gujarat, India</span
               >
             </div>
           </a>
@@ -995,7 +972,7 @@
               sm:justify-start
             "
           >
-            <a class="text-gray-500">
+            <a href="#" class="text-black-500 hover:text-blue-900">
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -1009,7 +986,7 @@
                 ></path>
               </svg>
             </a>
-            <a class="ml-3 text-gray-500">
+            <a href="#" class="ml-3 text-black-500 hover:text-blue-900">
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -1023,7 +1000,7 @@
                 ></path>
               </svg>
             </a>
-            <a class="ml-3 text-gray-500">
+            <a href="#" class="ml-3 text-black-500 hover:text-blue-900">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -1039,7 +1016,7 @@
                 ></path>
               </svg>
             </a>
-            <a class="ml-3 text-gray-500">
+            <a href="#" class="ml-3 text-black-500 hover:text-blue-900">
               <svg
                 fill="currentColor"
                 stroke="currentColor"
